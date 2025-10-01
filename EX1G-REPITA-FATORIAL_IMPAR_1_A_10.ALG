@@ -1,33 +1,34 @@
 Algoritmo "Ex1g-Repita-fatorial_impar_1_a_10"
-// Disciplina   : [Lógica de Programação]
+// Disciplina   : [LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Jailson Costa dos Santos
-// Descrição   : Elaborar um programa que apresente como resultado o valor do
-//               fatorial dos valores ímpares situados na faixa numérica de 1 a 10.
-// Autor(a)    : Thallya Bianka Gonçalves da Silva
+// DescriÃ§Ã£o   : Elaborar um programa que apresente como resultado o valor do
+//               fatorial dos valores Ã­mpares situados na faixa numÃ©rica de 1 a 10.
+// Autor(a)    : Thallya Bianka GonÃ§alves da Silva
 // Data atual  : 29/09/2025
 Var
-   // Seção de Declarações das variáveis
-   numero, i : inteiro
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+   numero, vezes : inteiro
    fatorial : real
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
 
    numero <- 1
 
    repita
       se numero mod 2 <> 0 entao
          fatorial <- 1
-         i <- 1
+         vezes <- 1
 
          repita
-            fatorial <- fatorial * i
-            i <- i + 1
-         ate i > numero
+            fatorial <- fatorial * vezes
+            vezes <- vezes + 1
+         ate vezes > numero
 
-         escreval("O fatorial de", numero, " é: ", fatorial:0:0)
+         escreval("O fatorial de", numero, " Ã©: ", fatorial:0:0)
       fimse
 
       numero <- numero + 1
    ate numero > 10
+
 
 Fimalgoritmo
